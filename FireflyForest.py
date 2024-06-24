@@ -11,6 +11,7 @@ import math
 from sklearn.decomposition import PCA
 import copy
 
+
 def find_max_k(data,Dthr = 23.928,omega=1,max_k=100,IQR_threhold=1.5):
     lpca = skdim.id.lPCA().fit_pw(data,
                                   n_neighbors=max_k,
